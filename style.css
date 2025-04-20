@@ -613,8 +613,14 @@ footer{
       }
       .skills {
           background-color: #add8e6; /* نفس لون الخلفية اللي تحت */
-          padding: 20px 20px;
-          text-align: center;        }
+          padding: 20px 0px;
+          text-align: center;        
+          clear: both;
+
+        }
+        .skills button{
+          margin: 0;
+        }
    
         .myProjects{
           clear: both;
@@ -693,12 +699,16 @@ footer{
         display: none;
       }
       .btnPublished{
-          margin-bottom:50px;/*15px*/
+          margin-bottom:0px;/*15px*/
   /*
       position: absolute;
       right: 0;
       width: 120px;
   */
+      }
+      .see-more{
+        clear: both;
+        display: block;
       }
 
   .aboutMe{
