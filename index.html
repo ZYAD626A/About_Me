@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This Web about me , i'm Ziad Ahmed">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://images.icon-icons.com/2217/PNG/512/augmented_reality_computer_developer_coding_programming_icon_134250.png">
+    <title>About Me</title>
+</head>
+<body>
+    <header>
+        <nav id="resNav">
+            <h3>Ziad</h3>
+            <div class="btn">
+                <button id="open"><i class="fa-solid fa-list"></i></button>
+                <button id="close"class="hide"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <ul id="ul1">
+                <li><a href="#"id="li1_home">Home</a></li>
+                <li><a href="#"id="li2_pro">Profile</a></li>
+                <li><a href="#"id="li3_call">Call</a></li>
+                <li><a href="#"><select id="langSwitcher">
+                    <option value="en"id="english">English</option>
+                    <option value="ar"id="arabic">arabic</option>
+                </select></a></li>
+            </ul>
+        </nav>
+        <section class="me">
+            <h1 id="my_name_2">Ziad Ahmed</h1>
+            <h2 id="jop">Front-End Developer</h2>
+            <p id="infor_about_me">
+                I'm Ziad Ahmed, a 15-year-old developer from Egypt. I've been seriously learning programming for over a year now,
+                after realizing I started on the wrong path. Now, I'm focused on becoming a strong front-end developer,
+                and soon I’ll dive into back-end development after mastering JavaScript. I love building websites, and I'm passionate
+                about growing my skills in web and game development.
+            </p>
+        </section>
+        <section class="imgMe">
+            <div class="boxImgMe">
+                <img src="images/me.jpg">
+            </div>
+        </section>
+    </header>
+    <div class="socialMedia">
+        <a href="https://wa.me/2001126763117" class="w"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://t.me/front_end_devolober" target="_blank" class="t"><i class="fa-brands fa-telegram"></i></a>
+        <a href="#" class="f"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.tiktok.com/@monster_gg_55?is_from_webapp=1&sender_device=pc" class="tik"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+    <main>
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">HTML5</div>
+                <div class="skill">CSS3</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Git & GitHub</div>
+                <div class="skill">Responsive Design</div>
+                <div class="skill">React (Soon)</div>
+                <div class="skill">Node.js (Soon)</div>
+            </div>
+        </section>
+    </main>
+    <main class="myProjects">
+        <div class="btnPublished">
+            <button onclick="showAll()"id="show_all_pro">Show All</button>
+            <button onclick="showPublished()"id="published_pro">Published</button>
+            <button onclick="showNotPublished()"id="not_published_pro">Not Published</button>
+        </div>
+        <section class="projects card published">
+            <h2 id="restaurant_title">🍽️ Restaurant Web</h2>
+            <div class="project-card">
+                <h3 id="restaurant_title2">Restaurant Website</h3>
+                <p id="about_res">Simple restaurant website using HTML, CSS & JS.</p>
+                <a href="https://zyad626a.github.io/restaurant-Tom/"id="enter_web">Live Demo</a><!--i stoped in this code-->
+            </div>
+            <div class="imageProjects">
+                <img src="images/project1.png">
+            </div>
+            <p>Status: <span style="color: green;"id="puplished_text_t">Website Published ✅</span></p>
+        </section>
+
+
+        <section class="projects card not-published" title="soon will open this web on github">
+            <h2 id="student">🎓 Student Portal</h2>
+            <div class="project-card">
+                <h3 id="student2">Student Website</h3>
+                <p id="student_des">Simple Student Portal website using HTML, CSS & JS.</p>
+                <a href="#"id="enter_web">Live Demo</a>
+            </div>
+            <div class="imageProjects">
+                <img src="images/project2.png">
+            </div>
+            <p>Status: <span style="color: orange;"id="puplished_text_f">Website Not Published 🕒</span></p>
+        </section>
+
+
+        <section class="projects card not-published" title="soon will open this web on github">
+            <h2 id="adidas_title">👟 Adidas Website</h2>
+            <div class="project-card">
+                <h3 id="adidas_title2">Adidas Website</h3>
+                <p id="adidas_des">Simple Adidas website using HTML, CSS & JS.</p>
+                <a href="#"id="enter_web">Live Demo</a>
+            </div>
+            <div class="imageProjects">
+                <img src="images/project3.png">
+            </div>
+            <p>Status: <span style="color: orange;"id="puplished_text_f">Website Not Published 🕒</span></p>
+        </section>
+
+
+        <section class="projects card published">
+            <h2 id="games_title">🎮 Games Gallery</h2>
+            <div class="project-card">
+                <h3 id="games_title2">Games Website</h3>
+                <p id="games_des">Simple Games Gallery website using HTML, CSS & JS.</p>
+                <a href="https://zyad825.github.io/Crack-To-Game/"id="enter_web">Live Demo</a>
+            </div>
+            <div class="imageProjects">
+                <img src="images/project4.png">
+            </div>
+            <p>Status: <span style="color: green;"id="puplished_text_t">Website Published ✅</span></p>
+        </section>
+        <a href="projects.html" class="see-more"id="see_all_projects">See All Projects</a>
+    </main>
+
+    <main class="aboutMe">
+        <div class="rightDes">
+            <h2 id="about_me_title">About Me :</h2>
+            <p id="about_me_des">
+                My name is Ziad Ahmed, I'm a 15-year-old programmer from Egypt. I've been coding for about a year seriously,
+                though I initially started around 1.5 to 2 years ago, but on the wrong path. I'm now fully dedicated to Front-End development,
+                and soon transitioning to Back-End once I master JavaScript. I'm passionate about making unique websites and learning new things every day.
+            </p>
+            <div class="social_Media_About_Me">
+                <a href="https://wa.me/2001126763117"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://t.me/front_end_devolober"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.tiktok.com/@monster_gg_55?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="imageDes">
+            <div class="imageDes2">
+                <img src="images/me.jpg" alt="">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="leftFooter">
+            <div class="link">
+                <h4><a href="#">YouTupe</a></h4>
+                <h4><a href="https://www.tiktok.com/@monster_gg_55?is_from_webapp=1&sender_device=pc">TikTok</a></h4>
+                <h4><a href="#">Instgram</a></h4>
+                <h4><a href="https://t.me/front_end_devolober">Telegram</a></h4>
+            </div>
+            <div class="link">
+                <h4><a href="https://wa.me/2001126763117">Whats App</a></h4>
+                <h4><a href="#">Descord</a></h4>
+                <h4><a href="#">FaceBook</a></h4>
+                <h4><a href="#">More</a></h4>
+            </div>
+            <div class="link">
+                <h4><a href="#">YouTube</a></h4>
+                <h4><a href="#">SnapChat</a></h4>
+                <h4><a href="#">TomDevol.</a></h4>
+                <h4><a href="#">TomVideos.</a></h4>
+            </div>
+            <div class="link">
+                <h4><a href="#">Information</a></h4>
+                <h4><a href="#">About Me</a></h4>
+                <h4><a href="#">Numbers</a></h4>
+                <h4><a href="#">Compliant</a></h4>
+            </div>
+            <p>@Ziad_Devolper555@Gmail.com</p>
+        </div>
+        <div class="rightFooter">
+            <h1><span id="my_name_footer">Ziad</span> <i class="fa-solid fa-cat" style="color: var(--ut-orange);"></i></h1>
+            <h3 id="my_des">I Love All Type Programming , <span>Web</span></h3>
+            <p id="my_des_1">
+                Games, Apps — I will learn it all soon. I'm passionate about HTML, CSS, JavaScript, and planning to dive into C++, C#, Java,
+                PHP, MySQL, React, and Node.js. The journey just started, and I'm all in.
+            </p>
+        </div>
+    </footer>
+    <div id="up">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <script src="script.js"></script>
+    <!--<i class="fa-solid fa-star"></i>-->
+</body>
+</html>
